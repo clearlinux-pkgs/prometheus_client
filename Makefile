@@ -1,5 +1,5 @@
 PKG_NAME := prometheus_client
-URL = https://files.pythonhosted.org/packages/f6/26/59866771c3af5cb233ead7f8926e359fcd861c434d9625b63c267284f439/prometheus_client-0.3.0.tar.gz
+URL = https://files.pythonhosted.org/packages/a1/b1/08de091b392fec31da9bd3f5edd9214ec1c6931dd81641610ac20f3ff934/prometheus_client-0.3.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
