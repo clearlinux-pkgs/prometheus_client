@@ -4,7 +4,7 @@
 #
 Name     : prometheus_client
 Version  : 0.4.1
-Release  : 4
+Release  : 5
 URL      : https://files.pythonhosted.org/packages/76/e8/b29b8e1dcf176687c30fe39ba9416ffe72fd4254a45ed9f92ecce98278cf/prometheus_client-0.4.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/76/e8/b29b8e1dcf176687c30fe39ba9416ffe72fd4254a45ed9f92ecce98278cf/prometheus_client-0.4.1.tar.gz
 Summary  : Python client for the Prometheus monitoring system.
@@ -43,7 +43,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1539119247
+export SOURCE_DATE_EPOCH=1539123691
 python3 setup.py build
 
 %install
