@@ -4,7 +4,7 @@
 #
 Name     : prometheus_client
 Version  : 0.7.1
-Release  : 15
+Release  : 16
 URL      : https://files.pythonhosted.org/packages/b3/23/41a5a24b502d35a4ad50a5bb7202a5e1d9a0364d0c12f56db3dbf7aca76d/prometheus_client-0.7.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b3/23/41a5a24b502d35a4ad50a5bb7202a5e1d9a0364d0c12f56db3dbf7aca76d/prometheus_client-0.7.1.tar.gz
 Summary  : Python client for the Prometheus monitoring system.
@@ -15,8 +15,7 @@ Requires: prometheus_client-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 
 %description
-# Prometheus Python Client
-The official Python 2 and 3 client for [Prometheus](http://prometheus.io).
+See https://github.com/prometheus/client_python/blob/master/README.md for documentation.
 
 %package python
 Summary: python components for the prometheus_client package.
@@ -31,6 +30,7 @@ python components for the prometheus_client package.
 Summary: python3 components for the prometheus_client package.
 Group: Default
 Requires: python3-core
+Provides: pypi(prometheus_client)
 
 %description python3
 python3 components for the prometheus_client package.
@@ -38,13 +38,15 @@ python3 components for the prometheus_client package.
 
 %prep
 %setup -q -n prometheus_client-0.7.1
+cd %{_builddir}/prometheus_client-0.7.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1561041440
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1583203392
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
