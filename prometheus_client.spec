@@ -4,7 +4,7 @@
 #
 Name     : prometheus_client
 Version  : 0.11.0
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/a1/90/7f1a14c2d0638e1a6981612171881733ef015cbabbded709ac3ab3d2920a/prometheus_client-0.11.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a1/90/7f1a14c2d0638e1a6981612171881733ef015cbabbded709ac3ab3d2920a/prometheus_client-0.11.0.tar.gz
 Summary  : Python client for the Prometheus monitoring system.
